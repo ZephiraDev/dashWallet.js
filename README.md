@@ -13,14 +13,21 @@ Sent Đ1.0 to @johndoe!
 # Alpha CLI (may change)
 
 ```txt
-Usage:
-    wallet friend <handle> [xpub-or-addr]
-    wallet pay <handle|pay-addr> <DASH> [--dry-run]
-    wallet balances
-    wallet sync
+wallet balances
+wallet export [./dir/ or ./file.wif]
+wallet friend [xpub-or-static-addr]
+wallet generate address
+wallet import <./path/to.wif>
+wallet list [--sort wallet,amount,addr] [--json]
+wallet pay <handle|pay-addr> [--dry-run] [--coins Xxxxx:xx:0,...]
+wallet remove [--no-wif]
+wallet stat
+wallet sync
+wallet version
 
 Global Options:
-    --config-dir ~/.config/dash/
+--config-dir ~/.config/dash/
+--sync # wait for sync first
 ```
 
 ## Examples
